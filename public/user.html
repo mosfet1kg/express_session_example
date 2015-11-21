@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>hello! <span id="user_id"></span></h1>
+
+<script>
+
+    $.get('/userID', function(data){
+        console.log(data);
+        $('#user_id').html(data);
+    })
+</script>
+</body>
+</html>
